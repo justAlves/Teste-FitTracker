@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    image: 01oseluiz/svelte-ionic-dev
+    env_file:
+      - .env
+    container_name: mobile-app
+    working_dir: /app
+    volumes:
+      - ./:/app
+    # In host mode is not needed bind ports
+    network_mode: host
+    user: 1000:1000
+    tty: true
