@@ -29,30 +29,29 @@
         console.error(e);
       });
   }
-
 </script>
 
-<ion-app>
+<ion-app >
   <Router {routes} on:routeLoading={routeLoading}/>
 
   <ion-tab-bar slot="bottom">
 
       <ion-tab-button on:click={() => navigate("/")}>
         <ion-icon name="water" class="walk-icon"></ion-icon>
-        <ion-label>Water Goal</ion-label>
+        <ion-label>Água</ion-label>
       </ion-tab-button>
 
 
 
       <ion-tab-button on:click={() => push("/walk")}>
         <ion-icon name="walk" class="walk-icon"></ion-icon>
-        <ion-label>Walk Goal</ion-label>
+        <ion-label>Exercícios</ion-label>
       </ion-tab-button>
 
 
     <ion-tab-button on:click={() => push("/settings")}>
       <ion-icon name="settings" class="walk-icon"></ion-icon>
-      <ion-label>Settings</ion-label>
+      <ion-label>Configurações</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 
@@ -64,5 +63,6 @@
     --color-selected: #00aa2a;
     --color-focused: #00aa2a;
   }
+
 </style>
 

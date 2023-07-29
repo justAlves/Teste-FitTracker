@@ -1,22 +1,17 @@
 <script lang="ts">
+  import WaterHeader from "../../WaterHeader/WaterHeader.svelte";
 
+  console.log(WaterHeader);
 </script>
 
-<ion-content >
-  <div class="container">
-    <h1>Water Goal</h1>
-  </div>
+<ion-content>
+  <WaterHeader />
 </ion-content>
 
-<style>
+<style lang="scss">
   ion-content{
     --background: #eeeeee;
-  }
+}
 
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-  }
 </style>
+
