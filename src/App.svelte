@@ -64,5 +64,9 @@
     --color-focused: #00aa2a;
   }
 
+  ion-app{
+    --background: #eeeeee;
+    height: 100%;
+  }
 </style>
 

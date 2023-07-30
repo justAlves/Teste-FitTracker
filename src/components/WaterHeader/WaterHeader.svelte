@@ -4,18 +4,13 @@
   export let value = 0;
 </script>
 
-<ion-content >
-  <div class="container">
-    <div class="header">
+<ion-header class="header">
+    <div class="container">
       <ion-icon name="water" class="walk-icon"></ion-icon>
       <h1>Consumido: <span>{value}ml</span></h1>
       <h2>Meta: <span>{max}ml</span></h2>
     </div>
-    <div>
-
-    </div>
-  </div>
-</ion-content>
+</ion-header>
 
 <style>
   ion-content{
@@ -26,7 +21,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
   }
 
   .header{
@@ -34,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: 30%;
     width: 100%;
     background-color: #333fe9;
     border-bottom-left-radius: 15px;
