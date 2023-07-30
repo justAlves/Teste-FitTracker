@@ -1,15 +1,15 @@
 <script lang="ts">
   export let min = 0;
-  export let max = 2000;
+  export let max = 4;
   export let value = 0;
 </script>
 
 <ion-content >
   <div class="container">
     <div class="header">
-      <ion-icon name="water" class="walk-icon"></ion-icon>
-      <h1>Consumido: <span>{value}ml</span></h1>
-      <h2>Meta: <span>{max}ml</span></h2>
+      <ion-icon name="walk" class="walk-icon"></ion-icon>
+      <h1>Pausas: <span>{value}</span></h1>
+      <h2>Meta: <span>{max}</span></h2>
     </div>
     <div>
 
@@ -36,7 +36,7 @@
     justify-content: center;
     height: 40%;
     width: 100%;
-    background-color: #333fe9;
+    background-color: #e03030;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 10px 23px 4px rgba(0,0,0,0.1);

@@ -1,11 +1,11 @@
 <script lang="ts">
+  import WalkHeader from "../../WalkHeader/WalkHeader.svelte";
 
+  console.log(WalkHeader);
 </script>
 
 <ion-content>
-  <h1>
-      Walk
-  </h1>
+  <WalkHeader />
 </ion-content>
 
 <style>
