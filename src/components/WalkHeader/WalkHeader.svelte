@@ -4,29 +4,19 @@
   export let value = 0;
 </script>
 
-<ion-content >
+<ion-header class="header">
   <div class="container">
-    <div class="header">
-      <ion-icon name="walk" class="walk-icon"></ion-icon>
-      <h1>Pausas: <span>{value}</span></h1>
-      <h2>Meta: <span>{max}</span></h2>
-    </div>
-    <div>
-
-    </div>
+    <ion-icon name="walk" class="walk-icon"></ion-icon>
+    <h1>Pausas: <span>{value}</span></h1>
+    <h2>Meta: <span>{max}</span></h2>
   </div>
-</ion-content>
+</ion-header>
 
 <style>
-  ion-content{
-    --background: #eeeeee;
-  }
-
   .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
   }
 
   .header{
@@ -34,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: 30%;
     width: 100%;
     background-color: #e03030;
     border-bottom-left-radius: 15px;
@@ -55,7 +45,7 @@
     font-weight: bold;
   }
 
-  h2, h3{
+  h2{
     color: #ffffffc7;
     font-size: 1.5rem;
     margin: 1px;

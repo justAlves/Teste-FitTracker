@@ -1,6 +1,11 @@
 <script lang="ts">
+
+  import { store } from "../../context/store";
+
+
+
   export let min = 0;
-  export let max = 2000;
+  export let max = $store.waterGoal;
   export let value = 0;
 </script>
 
@@ -49,7 +54,7 @@
     font-weight: bold;
   }
 
-  h2, h3{
+  h2{
     color: #ffffffc7;
     font-size: 1.5rem;
     margin: 1px;

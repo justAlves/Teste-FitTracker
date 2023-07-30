@@ -11,7 +11,13 @@
   <WaterHeader value={300} />
 
   <ion-content>
-    <Card icon="water" title="Consumido" value="300ml" iconColor={type === "water" ? "333fe9" : ""}/>
+
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button color="dark" on:click={() => push("/walk-goal")}>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
   </ion-content>
 
 <style lang="scss">

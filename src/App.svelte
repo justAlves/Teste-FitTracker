@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Router, { replace, link, push } from "svelte-spa-router";
+  import Router, { replace, push } from "svelte-spa-router";
+  import { store } from "./context/store";
   import routes, { IRouteLoadingDetail } from "./routes";
 
   function routeLoading(event: CustomEvent) {
@@ -22,21 +23,15 @@
     }
   }
 
-  function navigate(path: string) {
-    push(path)
-      .catch((e) => {
-        // eslint-disable-next-line no-console
-        console.error(e);
-      });
-  }
+
 </script>
 
-<ion-app >
+<ion-app>
   <Router {routes} on:routeLoading={routeLoading}/>
 
   <ion-tab-bar slot="bottom">
 
-      <ion-tab-button on:click={() => navigate("/")}>
+      <ion-tab-button on:click={() => push("/")}>
         <ion-icon name="water" class="walk-icon"></ion-icon>
         <ion-label>Água</ion-label>
       </ion-tab-button>
@@ -67,6 +62,10 @@
   ion-app{
     --background: #eeeeee;
     height: 100%;
+  }
+
+  ion-fab{
+    margin-bottom: 4rem;
   }
 </style>
 
