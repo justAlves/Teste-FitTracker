@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { writable } from "svelte/store";
 
 type GlobalState = {
@@ -28,6 +29,7 @@ const createStorage = () => {
       waterPerNotification,
     })),
     reset: () => set(initialState),
+    set,
   };
 };
 

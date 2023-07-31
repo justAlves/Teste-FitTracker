@@ -19,4 +19,7 @@
   "eslint.probe": ["javascript", "typescript", "html", "markdown", "svelte"],
   "eslint.validate": ["javascript", "typescript", "html", "markdown", "svelte"],
   "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
 }

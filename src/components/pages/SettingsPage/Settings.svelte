@@ -1,16 +1,16 @@
-
 <script lang="ts">
   import { store } from "context/store";
 
   let editable = false;
 
-
-
-  function toggleEditable() {
-    editable = !editable;
+  function handleClick() {
+    if (editable) {
+      editable = true;
+    } else {
+      // Editar
+      editable = false;
+    }
   }
-
-
 </script>
 
 <ion-content>
@@ -27,23 +27,19 @@
     </ion-item>
     <ion-item>
       <ion-label>Pausas para Exercitar</ion-label>
-      <ion-input slot="end" placeholder="Meta de pausas"></ion-input>
+      <ion-input slot="end" placeholder="Meta de pausas" />
     </ion-item>
     <ion-item>
       <ion-label>Água por aviso</ion-label>
-      <ion-input slot="end" placeholder="Água sugerida no aviso"></ion-input>
+      <ion-input slot="end" placeholder="Água sugerida no aviso" />
     </ion-item>
   </ion-list>
 
-  <ion-button
-    color="success"
-    onClick={toggleEditable}
-  >
-    <ion-icon name="save-outline"></ion-icon>
-    Salvar
+  <ion-button color="success" onClick={handleClick}>
+    <ion-icon name="save-outline" />
+    {editable ? "Salvar" : "Editar"}
   </ion-button>
 </ion-content>
 
 <style lang="scss">
-
 </style>
